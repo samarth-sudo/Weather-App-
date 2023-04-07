@@ -1,0 +1,4 @@
+Channel ID: 2051273
+https://thingspeak.com/channels/2051273
+Write API 0QN72H56I4CE2P51
+Read API XQ9G79JHN6FJCCE9

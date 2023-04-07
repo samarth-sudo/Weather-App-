@@ -1,0 +1,54 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styles */
+body {
+    font-family: sans-serif;
+    background-color: #141e30;
+    background-image: linear-gradient(to top, #141e30 0%, #243b55 100%);
+    color: #d73819;
+}
+
+h1,
+h2 {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.weather-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.weather-data {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.2);
+    text-align: center;
+}
+
+.weather-data p {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    color: #333;
+}
+
+/* Media queries */
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin: 1rem 0;
+    }
+}

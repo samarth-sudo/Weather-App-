@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Weather App</title>
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='cloudy.png') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <div class="weather-section">
+        <div class="weather-data">
+            <h1>Weather Data</h1>
+            <table>
+                <tr>
+                    <td>Data Packet:</td>
+                    <td>{{ Datapacket }}</td>
+                </tr>
+                <tr>
+                    <td>Temperature:</td>
+                    <td>{{ Temperature }} &#8451;</td>
+                </tr>
+                <tr>
+                    <td>Pressure:</td>
+                    <td>{{ Pressure }} hPa</td>
+                </tr>
+                <tr>
+                    <td>Humidity:</td>
+                    <td>{{ Humidity }}%</td>
+                </tr>
+                <tr>
+                    <td>RSSI:</td>
+                    <td>{{ RSSI }} dBm</td>
+                </tr>
+            </table>
+            
+        </div>
+    </div>
+    <script>
+        setTimeout(function () {
+            location.reload();
+        }, 1000);
+    </script>
+</body>
+
+</html>
